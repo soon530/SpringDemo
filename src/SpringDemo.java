@@ -5,7 +5,7 @@ import org.springframework.core.io.Resource;
 
 public class SpringDemo {
 	public static void main(String[] args) {
-		Resource rs = new FileSystemResource("beans-config.xml");
+		Resource rs = new FileSystemResource("xml/beans-config.xml");
 		BeanFactory factory = new XmlBeanFactory(rs);
 
 		HelloBean hello = (HelloBean) factory.getBean("helloBean");
